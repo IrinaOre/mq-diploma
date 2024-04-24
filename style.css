@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "OpenSans";
+    src: url(../fonts/OpenSans-Bold.ttf) format("ttf"), 
+    url(../fonts/OpenSans-Bold.woff) format("woff"), 
+    url(../font/OpenSans-Bold.woff2) format("woff2");
+    font-weight: 700;
+}
+@font-face {
+    font-family: "OpenSans";
+    src: url(../fonts/OpenSans-Regular.ttf) format("ttf"), 
+    url(../fonts/OpenSans-Regular.woff) format("woff"), 
+    url(../font/OpenSans-Regular.woff2) format("woff2");
+    font-weight: 400;
+}
+
+body {
+    min-width: 1200px;
+}
+
+.header {
+    font-family: "OpenSans", sans-serif;
+    font-weight: 700;
+    background-image: url("../images/banner-bg.jpg");
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    padding-top: 35px;
+    padding-bottom: 145px;
+}
+
+.header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000000;
+    opacity: 0.6;
+    z-index: -1;
+  }
+
+  .header__section {
+    padding: 0 15px;
+    display: flex;
+    margin: 0 10%;
+    padding: 0 15px;
+    justify-content: space-between;
+    align-items: center;
+   
+  }
+
+  .header__logo {
+    width: 180px;
+    z-index: 1; 
+  }
+
+  .menu-list__item {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-left: 35px; 
+    
+  }
+  .menu-list__item:first-child {
+    margin-left: 0;
+  }
+  .menu-link {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .menu-link:hover {
+    text-decoration: underline;
+  }
+
+  .header-title {
+    color: #ffffff;
+    font-family: "OpenSans";
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 75px;
+    text-transform: uppercase;
+    width: 700px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 195px;
+  }
+
+  .trends__title {
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 45px;
+    color: #0f0d0e;
+    font-weight: 700;
+    font-family: "OpenSans";
+    margin-top: 58px;
+  }
+  .trends__title::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid #e1d9bd;
+    width: 66px;
+    margin: 12px auto 0 auto;
+  }
+
+  .trends__cards {
+    display: grid;
+    gap: 4px;
+    height: 320px;
+    grid-template-columns: repeat(4, 1fr); 
+  }
+  
