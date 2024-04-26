@@ -184,16 +184,6 @@ body {
     margin-right: 30px;
     }
 
-  .trends__list-item:hover {
-    font-size: 14px;
-    line-height: 40px;
-    text-decoration: underline;
-    text-transform: uppercase;
-    color: #b59f5b;
-    font-weight: 700;
-    font-family: "OpenSans";
-    }
-
   .trends__card-title {
     font-size: 20px;
     line-height: 24px;
@@ -211,6 +201,21 @@ body {
     font-weight: 700;
     font-family: "Open Sans";
   }
+
+  .trends__card-link {
+    text-decoration: none;
+    color: #b59f5b; 
+  }
+
+  .trends__card-link:hover {
+    font-size: 14px;
+    line-height: 40px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: #b59f5b;
+    font-weight: 700;
+    font-family: "OpenSans";
+    }
   
    .trends__list {
     list-style-type: none;
