@@ -22,6 +22,8 @@ body {
  min-width: 1200px;
     }
 
+/* header */
+
 .header {
     font-family: "OpenSans", sans-serif;
     font-weight: 700;
@@ -44,9 +46,9 @@ body {
     background: #000000;
     opacity: 0.6;
     z-index: -1;
-  }
+}
 
-  .header__section {
+.header__section {
     min-width: 1200px;
     padding: 0 15px;
     display: flex;
@@ -55,33 +57,33 @@ body {
     justify-content: space-between;
     align-items: center;
    
-  }
+}
 
-  .header__logo {
+.header__logo {
     width: 180px;
     z-index: 1; 
-  }
+}
 
-  .menu-list__item {
+.menu-list__item {
     display: inline-block;
     font-size: 13px;
     font-weight: 400;
     text-transform: uppercase;
     margin-left: 35px; 
     
-  }
-  .menu-list__item:first-child {
+}
+.menu-list__item:first-child {
     margin-left: 0;
-  }
-  .menu-link {
+}
+.menu-link {
     color: #ffffff;
     text-decoration: none;
-  }
-  .menu-link:hover {
+}
+.menu-link:hover {
     text-decoration: underline;
-  }
+}
 
-  .header-title {
+.header-title {
     color: #ffffff;
     font-family: "OpenSans";
     font-weight: 700;
@@ -92,7 +94,9 @@ body {
     text-align: center;
     margin: 0 auto;
     margin-top: 195px;
-  }
+}
+
+/* New Trends */
 
   .trends__title {
     text-transform: uppercase;
@@ -118,7 +122,18 @@ body {
   }
   .image1 {
     background-image: url("../images/trend1.jpg");
+  }
 
+  .image2 {
+    background-image: url("../images/trend2.jpg"); 
+  }
+
+  .image3 {
+    background-image: url("../images/trend3.jpg");
+  }
+
+  .image4 {
+    background-image: url("../images/trend4.jpg");
   }
   
   .trends__card {
@@ -132,19 +147,18 @@ body {
     z-index: 0;
   }
 
-    .trends__card::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: #000000;
-        opacity: 0.6;
-        z-index: -1;
-      }
+  .trends__card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000000;
+    opacity: 0.6;
+    z-index: -1;
+    }
     
-
   .trends__card-content {
     margin-left: 20px;
     margin-right: 22px;
@@ -156,37 +170,48 @@ body {
     padding-left: 34px;
     padding-right: 35px;
     }
-    .trends__list {
-        font-size: 14px;
-        line-height: 40px;
-        text-transform: uppercase;
-        color: #b59f5b;
-        font-weight: 700;
-        font-family: "OpenSans";
-    }
-    .trends__list-item {
-        margin-right: 30px;
-    }
-    .trends__card-title {
-        font-size: 20px;
-        line-height: 24px;
-        text-transform: uppercase;
-        color: #ffffff;
-        font-weight: 700;
-        font-family: "OpenSans";
 
+  .trends__list {
+    font-size: 14px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #b59f5b;
+    font-weight: 700;
+    font-family: "OpenSans";
+    }
+
+  .trends__list-item {
+    margin-right: 30px;
+    }
+
+  .trends__list-item:hover {
+    font-size: 14px;
+    line-height: 40px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: #b59f5b;
+    font-weight: 700;
+    font-family: "OpenSans";
+    }
+
+  .trends__card-title {
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "OpenSans";
     }
     
-  .image2 {
-    background-image: url("../images/trend2.jpg");
-    
+  .trends__card-title:hover {
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #b59f5b;
+    font-weight: 700;
+    font-family: "Open Sans";
   }
-  .image3 {
-    background-image: url("../images/trend3.jpg");
-  }
-  .image4 {
-    background-image: url("../images/trend4.jpg");
-  }
+  
    .trends__list {
     list-style-type: none;
     display: flex;
