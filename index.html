@@ -7,60 +7,84 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="header">
-        <div class="header__section">
-            <div class="header__logo">
-                <a href="#home">
-                    <img class="headea__logo-image" src="svg/noemi-logo.svg" alt="logo">
-                </a>
+          <header class="header">
+            <div class="header__section">
+                <div class="header__logo">
+                    <a href="#home">
+                        <img class="headea__logo-image" src="svg/noemi-logo.svg" alt="logo">
+                    </a>
+                </div>
+                    <nav class="header-menu">
+                        <ul class="menu__list">
+                          <li class="menu-list__item">
+                            <a class="menu-link" href="#home">Главная</a>
+                          </li>
+                          <li class="menu-list__item">
+                            <a class="menu-link" href="#home">Посты</a>
+                          </li>
+                          <li class="menu-list__item">
+                            <a class="menu-link" href="#home">Статьи</a>
+                          </li>
+                          <li class="menu-list__item">
+                            <a class="menu-link" href="#home">Теги</a>
+                          </li>
+                          <li class="menu-list__item">
+                            <a class="menu-link" href="#home">Темы</a>
+                          </li>
+                          <li class="menu-list__item">
+                            <a class="menu-link" href="#home">Контакты</a>
+                          </li>
+                        </ul>
+                    </nav>
             </div>
-                <nav class="header-menu">
-                    <ul class="menu__list">
-                      <li class="menu-list__item">
-                        <a class="menu-link" href="#home">Главная</a>
-                      </li>
-                      <li class="menu-list__item">
-                        <a class="menu-link" href="#home">Посты</a>
-                      </li>
-                      <li class="menu-list__item">
-                        <a class="menu-link" href="#home">Статьи</a>
-                      </li>
-                      <li class="menu-list__item">
-                        <a class="menu-link" href="#home">Теги</a>
-                      </li>
-                      <li class="menu-list__item">
-                        <a class="menu-link" href="#home">Темы</a>
-                      </li>
-                      <li class="menu-list__item">
-                        <a class="menu-link" href="#home">Контакты</a>
-                      </li>
+            <h1 class="header-title">Блог о творчестве, спорте, и образе жизни</h1>
+        </header>
+        <div class="trends">
+            <h3 class="trends__title">Сейчас в тренде</h3>
+        </div>
+        <div class="trends__cards">
+            <div class="trends__card image1">
+                <div class="trends__card-content">
+                    <ul class="trends__list">
+                        <li class="trends__list-item">Lifestyle</li>
+                        <li class="trends__list-item">Interior</li>
                     </ul>
-                </nav>
+                    <h3 class="trends__card-title">Сейчас в тренде: сад  на подоконнике</h3>
+                </div> 
+            </div>
+            <div class="trends__card image2">
+                <div class="trends__card-content">
+                    <ul class="trends__list">
+                        <li class="trends__list-item">Food</li>
+                    </ul>
+                    <h3 class="trends__card-title">Сыры на красивых  картинках из интернета: какие они на вкус?</h3>
+                </div>   
+            </div>
+            <div class="trends__card image3">
+                <div class="trends__card-content">
+                    <ul class="trends__list">
+                        <li class="trends__list-item">Lifestyle</li>
+                        <li class="trends__list-item">Travel</li>
+                    </ul>
+                    <h3 class="trends__card-title">Собираемся в первый поход в горы</h3>
+                </div>
+               
+            </div>
+            <div class="trends__card image4">
+                <div class="trends__card-content">
+                    <ul class="trends__list">
+                        <li class="trends__list-item">Food</li>
+                        <li class="trends__list-item">Health</li>
+                    </ul>
+                    <h3 class="trends__card-title">Сейчас в тренде: сколько витамина С в лимонах?</h3>
+                </div> 
+            </div>
         </div>
-        <h1 class="header-title">Блог о творчестве, спорте, и образе жизни</h1>
-    </header>
-    <div class="trends">
-        <h3 class="trends__title">Сейчас в тренде</h3>
-    </div>
-    <div class="trends__cards">
-        <div class="trends__cards-item">
-            <img src="../images/trend1.jpg" alt="garden">
+        <div class="container">
+            <main class="main"></main>
+            <aside class="sidebar"></aside>
         </div>
-        <div class="trends__cards-item">
-            <img src="../images/trend2.jpg" alt="cheese">
-        </div>
-        <div class="trends__cards-item">
-            <img src="../images/trend3.jpg" alt="mountains">
-        </div>
-        <div class="trends__cards-item">
-            <img src="../images/trend4.jpg" alt="lemons">
-        </div>
-    </div>
-    <div class="container">
-        <main class="main"></main>
-        <aside class="sidebar"></aside>
-    </div>
-    <div class="goods"></div>
-    <footer></footer>
+        <div class="goods"></div>
+        <footer></footer> 
 </body>
 </html>
