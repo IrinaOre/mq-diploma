@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+ 
           <header class="header">
             <div class="header__section">
                 <div class="header__logo">
@@ -364,6 +365,46 @@
                       </ul>
                     </div>
                   </section>
+                   <!-- Popup must hide-->
+  <label class="btn" for="popup1">Pop-up</label>
+  <input type="checkbox" class="popup__control" id="popup1">
+  <div class="popup">
+    <div class="popup__content">
+      <label class="popup__close" for="popup1">&times;</label>
+      <h3 class="popup__title">Ваш фидбек</h3>
+
+      <form class="form">
+        <!-- popup select -->
+        <div class="form-group">
+          <label class="select-group">
+            <span class="form-label">Как часто вы заходите на сайт?</span>  
+            <select class="select">
+              <option value="Почти каждый день" selected>Почти каждый день</option>
+            </select>
+          </label>
+        </div>
+        <span class="form-label">Вы подписаны на e-mail рассылку?</span>
+        <!-- popup radio -->
+        <div class="form-radio">
+          <label class="radio-group">
+            <input type="radio" class="radio" name="radio-group" checked>
+            <span class="radio-group_text">Да</span>
+          </label>
+          <label class="radio-group">
+            <input type="radio" class="radio" name="radio-group">
+            <span class="radio-group_text">Нет</span>
+          </label>
+        </div>
+        <!-- popup textarea -->
+        <div class="form-text">
+          <label for="recipies" class="content-group">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</label>
+        <textarea name="content-group" id="content-group" cols="30" rows="5" > Может, больше рецептов?
+        </textarea>
+        </div>
+        <!-- popup button -->
+        <button type="submit" class="form-button">Отправить</button> 
+      </form>
+    </div>
             </aside>
         </div>
         <!-- Our Goods -->
@@ -409,7 +450,6 @@
                     </div>
                 </div>  
         </div> 
-        
         <footer class="footer">
              <div class="footer-icons">
                   <ul class="socials">
