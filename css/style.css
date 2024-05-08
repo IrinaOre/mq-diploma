@@ -157,6 +157,9 @@ body {
   justify-content: end;
   position: relative;
   z-index: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 15px;
 }
 
 .trends__card::after {
@@ -172,15 +175,21 @@ body {
   }
   
 .trends__card-content {
-  margin-left: 20px;
-  margin-right: 22px;
-  margin-bottom: 16px;
-  max-width: 370px;
+  /* margin-left: 20px; */
+  /* margin-right: 22px; */
+  /* margin-bottom: 16px; */
+  /* max-width: 370px; */
   border: 3px solid #b59f5b;
-  padding-top: 40px;
-  padding-bottom: 36px;
-  padding-left: 34px;
-  padding-right: 35px;
+  /* padding-top: 40px; */
+  /* padding-bottom: 36px; */
+  /* padding-left: 34px; */
+  /* padding-right: 35px; */
+
+  padding-top: 35px;
+  padding-bottom: 35px;
+  padding-left: 30px;
+  padding-right: 30px;
+ 
   }
 
 .trends__list {
@@ -848,6 +857,7 @@ body {
   font-size: 14px;
   text-transform: uppercase;
   color: #ffffff;
+  display: none;
 }
 
 .popup {
@@ -1061,18 +1071,95 @@ background-color: #323232;
   transform: translateY(-10px);
 } 
 
-@media(min-width: 768px) and (max-width: 1199px){
+@media(min-width: 768px) and (max-width: 1199px) {
+
+  body {
+    min-width: 64%;
+  }
   .header-menu {
     display: none;
   }
+  .header__section {
+    justify-content: space-between;
+    padding-left: 35px;
+    padding-right: 35px;
+    display: flex;
+    min-width: 768px;
+  }
+
+  .header-title {
+    font-size: 40px;
+  }
   .header__burger {
     display: block;
+    
   }
   .header__section {
-    padding-left: 8%;
-    padding-right: 8%;
-  } 
   
-}
+  } 
 
+  .trends__cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+   .trends__card-title {
+    font-size: 17px;
+   }
+
+  .trends__card {
+    width: calc((100% / 2) - 4px);
+  }
+
+  .container {
+    min-width: 64%;
+    gap: 35px;
+    display: grid;
+    grid-template-columns: 1fr 270px;
+    justify-content: center;
+  }
+
+  .main-article {
+    display: flex;
+    flex-direction: column;
+    min-width: 390px; 
+  } 
+  .main-image {
+    margin-bottom: 15px;
+  }
+
+  .main-content {
+    margin-left: 0;
+  }
+
+  .goods__title {
+    margin-bottom: 28px;
+    
+  }
+
+  .goods__cards {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 768px;
+    box-sizing: border-box;
+    padding-left: 56px;
+    padding-right: 56px;
+    margin: 0 auto;
+  }
+
+  .goods__card {
+    width: 290px;
+  }
+    
+  .goods__card:last-child {
+    margin-top: 48px;
+    margin-bottom: 70px;
+  }
+
+  .footer {
+    min-width: 678px;
+    margin: 0 auto;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  }
 
