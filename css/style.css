@@ -1145,26 +1145,22 @@ background-color: #323232;
     margin-bottom: 28px;
     
   }
-
+  
   .goods__cards {
     display: flex;
+    justify-content: space-between;
+    gap: 68px;
     flex-wrap: wrap;
     min-width: 768px;
-    box-sizing: border-box;
-    padding-left: 56px;
-    padding-right: 56px;
-    margin: 0 auto;
-    gap: 68px;
+    padding-left: 7%;
+    padding-right: 7%; 
+    
   }
 
   .goods__card {
-    width: 290px;
+    width: 290px;  
   }
-    
-  .goods__card:last-child {
-    /* margin-top: 48px; */
-    margin-bottom: 70px;
-  }
+
 
   .footer {
     min-width: 678px;
