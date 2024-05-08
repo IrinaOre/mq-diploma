@@ -654,14 +654,16 @@ body {
 
 .goods__cards {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   margin-top: 45px;
   margin-bottom: 65px;
   min-width: 1200px;
-  margin-right: 10%;
-  margin-left: 10%;
-  padding-left: 23px;
-  padding-right: 23px;
+  gap: 100px;
+  justify-content: center;
+  /* margin-right: 10%; */
+  /* margin-left: 10%; */
+  /* padding-left: 23px; */
+  /* padding-right: 23px; */
  
 }
 
@@ -669,6 +671,11 @@ body {
   width: 300px;
   display: flex;
   flex-direction: column;
+  height: 435px;
+}
+
+.goods__image {
+  
   
 }
 
@@ -687,7 +694,8 @@ body {
   outline: 2px solid #d3c59d;
   padding: 5px 0 5px;
   outline-offset: 20px;
-  flex-grow: 1;
+  height: 226px;
+  
 }
 
 .goods__content_text {
@@ -773,8 +781,10 @@ body {
 
 .footer {
   min-width: 1200px;
-  margin-left: 10%;
-  margin-right: 10%; 
+  /* margin-left: 10%; */
+  /* margin-right: 10%;  */
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .socials {
@@ -1144,6 +1154,7 @@ background-color: #323232;
     padding-left: 56px;
     padding-right: 56px;
     margin: 0 auto;
+    gap: 68px;
   }
 
   .goods__card {
