@@ -1162,7 +1162,7 @@ background-color: #323232;
   }
     
   .goods__card:last-child {
-    margin-top: 48px;
+    /* margin-top: 48px; */
     margin-bottom: 70px;
   }
 
