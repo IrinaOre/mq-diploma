@@ -1399,4 +1399,33 @@ flex-wrap: wrap;
     }
 
    }
+
+   @media(min-width: 320px) and (max-width: 640px) and (orientation: landscape) {
+
+    .trends__cards {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 100%;
+    }
+    
+    .trends__card {
+      width: calc((100% / 2) - 2px);
+    }
+
+   }
+
+   @media(min-width: 641px) and (max-width: 1199px) and (orientation: landscape) {
+
+    .trends__cards {
+      display: flex;
+      flex-wrap: no-wrap;
+      max-width: 100%;
+      gap: 4px;
+    }
+
+    .trends__card {
+      width: calc(100% / 4 - 12px);
+    }
+
+   }
     
