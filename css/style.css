@@ -1416,15 +1416,35 @@ flex-wrap: wrap;
 
    @media(min-width: 641px) and (max-width: 1199px) and (orientation: landscape) {
 
+
     .trends__cards {
       display: flex;
       flex-wrap: no-wrap;
-      max-width: 100%;
-      gap: 4px;
+      width: 100%;
     }
 
     .trends__card {
-      width: calc(100% / 4 - 12px);
+      width: calc((100% / 4) - 3px);
+      height: 150px;
+     
+    }
+
+    .trends__card-content {
+      padding: 5px;
+    }
+
+    .trends__list-item {
+      margin-right: 15px;
+    }
+
+    .trends__card-title {
+      font-size: 0.5em;
+      line-height: 12px;
+
+    }
+
+    .trends__list {
+      font-size: 0.5em;
     }
 
    }
