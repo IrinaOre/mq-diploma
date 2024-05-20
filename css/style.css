@@ -1400,7 +1400,7 @@ flex-wrap: wrap;
 
    }
 
-   @media(min-width: 320px) and (max-width: 640px) and (orientation: landscape) {
+   /*@media(min-width: 320px) and (max-width: 640px) and (orientation: landscape) { 
 
     .trends__cards {
       display: flex;
@@ -1447,5 +1447,5 @@ flex-wrap: wrap;
       font-size: 0.5em;
     }
 
-   }
+    }  */
     
